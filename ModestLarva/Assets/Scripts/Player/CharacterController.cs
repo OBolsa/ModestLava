@@ -22,6 +22,14 @@ public class CharacterController : MonoBehaviour
     [Header("Events")]
     [SerializeField] private UnityEvent m_OnSelect;
 
+    private void Start()
+    {
+        if(m_CharacterName == "Karl")
+        {
+            Physics2D.IgnoreLayerCollision(7, 3);
+        }
+    }
+
     private void Update()
     {
         float h = Input.GetAxisRaw("Horizontal");
