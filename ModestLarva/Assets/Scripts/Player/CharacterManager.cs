@@ -7,7 +7,6 @@ public class CharacterManager : MonoBehaviour
     public static CharacterManager instance;
 
     public string CurrentCharacterName;
-    [SerializeField] private CharacterController Karl;
     [SerializeField] private ActionChannel m_ActionChannel;
     [SerializeField] private UiChannel m_UiChannel;
     private List<CharacterController> _Characters = new List<CharacterController>();
@@ -37,12 +36,16 @@ public class CharacterManager : MonoBehaviour
             {
                 item.enabled = false;
                 item.InstigatorOff();
+                if (item.CharacterName == "Karl")
+                    item.gameObject.SetActive(false);
                 continue;
             }
 
             CurrentCharacterName = characterName;
             StartCoroutine(item.DelayInstigator());
             m_UiChannel.RaiseInventory(item.Inventory);
+            if (item.CharacterName == "Karl")
+                item.gameObject.SetActive(true);
             item.enabled = true;
         }
     }
@@ -71,5 +74,28 @@ public class CharacterManager : MonoBehaviour
         {
             _Characters.Add(character);
         }
+    }
+
+    public void BackToGhost()
+    {
+        int activeIndex = 0;
+        int karlIndex = 0;
+
+        for (int i = 0; i < _Characters.Count; i++)
+        {
+            if (_Characters[i].enabled)
+            {
+                activeIndex = i;
+            }
+
+            if(_Characters[i].CharacterName == "Karl")
+            {
+                karlIndex = i;
+            }
+        }
+
+        _Characters[karlIndex].transform.position = _Characters[activeIndex].transform.position;
+
+        SelectCharacter("Karl");
     }
 }

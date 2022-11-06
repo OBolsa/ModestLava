@@ -9,13 +9,12 @@ public class InteractionInstigator : MonoBehaviour
 
     private void Update()
     {
-        if (HasNearbyInteractables() && Input.GetButtonDown("Submit"))
+        if (Input.GetButtonDown("Submit"))
         {
-            ClosestInteractables().DoInteraction();
-        }
-        else if (GetComponentInParent<CharacterController>().CharacterName == "Karl")
-        {
-
+            if(HasNearbyInteractables())
+                ClosestInteractables().DoInteraction();
+            else if (GetComponentInParent<CharacterController>().CharacterName != "Karl")
+                CharacterManager.instance.BackToGhost();
         }
     }
 
