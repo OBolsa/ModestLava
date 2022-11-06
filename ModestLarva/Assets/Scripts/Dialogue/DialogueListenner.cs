@@ -35,7 +35,6 @@ public class DialogueListenner : MonoBehaviour
         {
             m_DialogueBox.gameObject.SetActive(false);
             StopAllCoroutines();
-            m_DialogueChannel.RaiseCloseDialogue(dialogue);
         }
     }
 }

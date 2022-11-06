@@ -14,26 +14,27 @@ public class DialogueBox : MonoBehaviour
         m_Dialogue = setDialogue;
 
         int lineIndex = 0;
-        int index = 0;
+        int textIndex = -1;
 
-        while(lineIndex < m_Dialogue.Line.Length)
+        while (lineIndex < m_Dialogue.Line.Length)
         {
-            m_DialogueText.text = m_Dialogue.Line[lineIndex].Text[index].Text;
+            textIndex++;
 
-            index++;
-
-            if(index >= m_Dialogue.Line[lineIndex].Text.Length)
+            if (textIndex >= m_Dialogue.Line[lineIndex].Text.Length)
             {
-                index = 0;
+                textIndex = 0;
                 lineIndex++;
+
+                if(lineIndex >= m_Dialogue.Line.Length)
+                {
+                    m_Channel.RaiseCloseDialogue(m_Dialogue);
+                    yield break;
+                }
             }
 
-            if (lineIndex >= m_Dialogue.Line.Length)
-                yield break;
-            else
-                yield return new WaitForSeconds(m_Dialogue.Line[lineIndex].Text[index].TimeInThisText);
-        }
+            m_DialogueText.text = m_Dialogue.Line[lineIndex].Text[textIndex].Text;
 
-        m_Channel.RaiseCloseDialogue(m_Dialogue);
+            yield return new WaitForSeconds(m_Dialogue.Line[lineIndex].Text[textIndex].TimeInThisText);
+        }
     }
 }
