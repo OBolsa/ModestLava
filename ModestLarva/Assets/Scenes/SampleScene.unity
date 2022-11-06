@@ -4845,6 +4845,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7747798412042917089, guid: 7c6cf7f9f6860e14eaa7e15028e61980, type: 3}
+      propertyPath: m_Inventory.Item.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7747798412042917090, guid: 7c6cf7f9f6860e14eaa7e15028e61980, type: 3}
       propertyPath: m_Name
       value: Billionaire01
