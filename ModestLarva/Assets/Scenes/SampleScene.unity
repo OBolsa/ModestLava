@@ -2417,8 +2417,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b5e917051c75a24288313121fa57715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DialogueChannel: {fileID: 0}
-  m_DialogueBox: {fileID: 0}
+  m_DialogueChannel: {fileID: 11400000, guid: 2befa6b6e96611941b75d2dfeae8a625, type: 2}
+  m_Dialogue: {fileID: 11400000, guid: 6b319567fc22cde45b1dd18f6d7f59bc, type: 2}
+  m_DialogueBox: {fileID: 1207274866896364468}
 --- !u!1 &1367968160
 GameObject:
   m_ObjectHideFlags: 0
@@ -2484,9 +2485,6 @@ MonoBehaviour:
     Item:
     - Martelo
     - Foice
-    - Pochete
-    - Tabaco de Mascar
-    - Geladeira Eletrolux 2 portas 410L 220v Garantia Extendida
   m_Rigidbody: {fileID: 1367968164}
   m_Animator: {fileID: 251848091}
   m_ActionChannel: {fileID: 11400000, guid: 852fd185c4851c242ac31e17dfeed6b6, type: 2}
@@ -2832,6 +2830,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1825432365 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9154378236791047473, guid: 61d17dc6023eaf84d8aaec38c4cd8db5, type: 3}
+  m_PrefabInstance: {fileID: 1207274866896364466}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1964795251
 GameObject:
   m_ObjectHideFlags: 0
@@ -3108,6 +3117,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door
       objectReference: {fileID: 0}
+    - target: {fileID: 1207274867116776133, guid: 61d17dc6023eaf84d8aaec38c4cd8db5, type: 3}
+      propertyPath: m_OnExitInArea.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207274867116776133, guid: 61d17dc6023eaf84d8aaec38c4cd8db5, type: 3}
+      propertyPath: m_OnExitInArea.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207274867116776133, guid: 61d17dc6023eaf84d8aaec38c4cd8db5, type: 3}
+      propertyPath: m_OnExitInArea.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 2befa6b6e96611941b75d2dfeae8a625, type: 2}
+    - target: {fileID: 1207274867116776133, guid: 61d17dc6023eaf84d8aaec38c4cd8db5, type: 3}
+      propertyPath: m_OnExitInArea.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207274867116776133, guid: 61d17dc6023eaf84d8aaec38c4cd8db5, type: 3}
+      propertyPath: m_OnExitInArea.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RaiseCloseDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207274867116776133, guid: 61d17dc6023eaf84d8aaec38c4cd8db5, type: 3}
+      propertyPath: m_OnEnterInArea.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RaiseOpenDialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207274867116776133, guid: 61d17dc6023eaf84d8aaec38c4cd8db5, type: 3}
+      propertyPath: m_OnExitInArea.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueChannel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1207274867116776133, guid: 61d17dc6023eaf84d8aaec38c4cd8db5, type: 3}
+      propertyPath: m_OnExitInArea.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 11400000, guid: 6b319567fc22cde45b1dd18f6d7f59bc, type: 2}
+    - target: {fileID: 1207274867116776133, guid: 61d17dc6023eaf84d8aaec38c4cd8db5, type: 3}
+      propertyPath: m_OnExitInArea.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 1207274867116776134, guid: 61d17dc6023eaf84d8aaec38c4cd8db5, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3179,4 +3224,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ecf6a3c190a30b4baac0a7362c105ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_DialogueText: {fileID: 0}
+  m_Channel: {fileID: 11400000, guid: 2befa6b6e96611941b75d2dfeae8a625, type: 2}
+  m_DialogueText: {fileID: 1825432365}
