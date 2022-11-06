@@ -12,5 +12,12 @@ public class Dialogue : ScriptableObject
 public struct DialogueLine
 {
     public string DialogueTitle;
-    [TextArea(1,5)] public string[] Text;
+    public DialogueNode[] Text;
+}
+
+[System.Serializable]
+public struct DialogueNode
+{
+    [TextArea(1, 5)] public string Text;
+    public float TimeInThisText;
 }
