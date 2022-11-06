@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -10912,10 +10912,10 @@ TextureImporter:
       5_Library_32x32Jam_198: 1389768226
       5_Library_32x32Jam_283: 927347262
       5_Library_32x32Jam_19: -484778187
-      5_Library_32x32Jam_134: -214865240
+      5_Library_32x32Jam_385: 2076823329
       5_Library_32x32Jam_27: -206099747
       5_Library_32x32Jam_317: -1155830806
-      5_Library_32x32Jam_385: 2076823329
+      5_Library_32x32Jam_134: -214865240
       5_Library_32x32Jam_290: -940223252
       5_Library_32x32Jam_102: 1023369277
       5_Library_32x32Jam_335: 103891942
@@ -11025,8 +11025,8 @@ TextureImporter:
       5_Library_32x32Jam_315: -1497244203
       5_Library_32x32Jam_264: -236596260
       5_Library_32x32Jam_373: -1803528394
-      5_Library_32x32Jam_211: -1015038029
       5_Library_32x32Jam_499: 1227509599
+      5_Library_32x32Jam_211: -1015038029
       5_Library_32x32Jam_36: 2073422585
       5_Library_32x32Jam_45: 1967695567
       5_Library_32x32Jam_371: -1047315593
@@ -11047,12 +11047,13 @@ TextureImporter:
       5_Library_32x32Jam_81: 1335486555
       5_Library_32x32Jam_38: 859831790
       5_Library_32x32Jam_238: -905429710
+      5_Library_32x32Jam_470: 268537973
       5_Library_32x32Jam_164: 1640212793
       5_Library_32x32Jam_372: -686655233
       5_Library_32x32Jam_170: -1565185733
-      5_Library_32x32Jam_177: 2011856841
       5_Library_32x32Jam_439: 411605527
       5_Library_32x32Jam_7: 67018236
+      5_Library_32x32Jam_177: 2011856841
       5_Library_32x32Jam_126: 375972544
       5_Library_32x32Jam_111: -1134689553
       5_Library_32x32Jam_500: 1949950799
@@ -11064,7 +11065,6 @@ TextureImporter:
       5_Library_32x32Jam_353: -1714089271
       5_Library_32x32Jam_10: 1111898763
       5_Library_32x32Jam_199: 1881285646
-      5_Library_32x32Jam_470: 268537973
       5_Library_32x32Jam_208: 1941505044
       5_Library_32x32Jam_343: -1839383158
       5_Library_32x32Jam_156: -1837631350
@@ -11086,10 +11086,10 @@ TextureImporter:
       5_Library_32x32Jam_118: 1046413120
       5_Library_32x32Jam_477: 1364034048
       5_Library_32x32Jam_226: -417465106
-      5_Library_32x32Jam_260: 399952144
+      5_Library_32x32Jam_404: 1200401361
       5_Library_32x32Jam_107: -1404226009
       5_Library_32x32Jam_434: -1346050172
-      5_Library_32x32Jam_404: 1200401361
+      5_Library_32x32Jam_260: 399952144
       5_Library_32x32Jam_201: 501819620
       5_Library_32x32Jam_383: 1000843128
       5_Library_32x32Jam_326: -29314773
