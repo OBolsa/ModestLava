@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
+    public static CharacterManager instance;
+
     public string CurrentCharacterName;
+    [SerializeField] private CharacterController Karl;
     [SerializeField] private ActionChannel m_ActionChannel;
     [SerializeField] private UiChannel m_UiChannel;
     private List<CharacterController> _Characters = new List<CharacterController>();
 
     private void Awake()
     {
+        instance = this;
         m_ActionChannel.OnAction += SelectCharacter;
     }
 
@@ -22,7 +26,7 @@ public class CharacterManager : MonoBehaviour
     private void Start()
     {
         FillCharacters();
-        SelectCharacter("Billionaire01");
+        SelectCharacter("Karl");
     }
 
     public void SelectCharacter(string characterName)

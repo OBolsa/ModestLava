@@ -13,6 +13,10 @@ public class InteractionInstigator : MonoBehaviour
         {
             ClosestInteractables().DoInteraction();
         }
+        else if (GetComponentInParent<CharacterController>().CharacterName == "Karl")
+        {
+
+        }
     }
 
     public bool HasNearbyInteractables()
