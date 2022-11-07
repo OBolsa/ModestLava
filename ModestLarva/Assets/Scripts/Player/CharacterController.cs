@@ -18,6 +18,7 @@ public class CharacterController : MonoBehaviour
     [SerializeField] private Animator m_Animator;
     [SerializeField] private ActionChannel m_ActionChannel;
     [SerializeField] private InteractionInstigator m_Instigator;
+    [SerializeField] private ParticleSystem m_Particle;
 
     [Header("Events")]
     [SerializeField] private UnityEvent m_OnSelect;
@@ -49,6 +50,11 @@ public class CharacterController : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
 
         m_Instigator.enabled = true;
+    }
+
+    public void PlayParticle()
+    {
+        m_Particle.Play();
     }
 }
 
