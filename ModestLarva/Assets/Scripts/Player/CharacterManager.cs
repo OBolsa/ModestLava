@@ -54,6 +54,23 @@ public class CharacterManager : MonoBehaviour
         }
     }
 
+    public CharacterController ActiveCharacter()
+    {
+        int index = 0;
+
+        for (int i = 0; i < _Characters.Count; i++)
+        {
+            if (_Characters[i].enabled)
+            {
+                index = i;
+                break;
+            }
+        }
+
+        return _Characters[index];
+    }
+
+
     public CharacterController CharacterByName(string characterName)
     {
         CharacterController character = null;

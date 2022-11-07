@@ -321,3 +321,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1a0070f74295a429d2206d317ec592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Time: 11
+  NextScene: SampleScene

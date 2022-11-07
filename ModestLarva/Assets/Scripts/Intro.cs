@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class Intro : MonoBehaviour
 {
+    [SerializeField] private float Time;
+    [SerializeField] private string NextScene;
+
     void Start()
     {
         StartCoroutine(ChangeScene());
@@ -12,8 +15,8 @@ public class Intro : MonoBehaviour
 
     public IEnumerator ChangeScene()
     {
-        yield return new WaitForSeconds(11f);
+        yield return new WaitForSeconds(Time);
 
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene(NextScene);
     }
 }
