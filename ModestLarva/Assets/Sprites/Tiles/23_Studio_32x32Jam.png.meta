@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -3684,19 +3684,19 @@ TextureImporter:
       23_Studio_32x32Jam_108: -1135694964
       23_Studio_32x32Jam_75: 345764925
       23_Studio_32x32Jam_37: 2026055466
-      23_Studio_32x32Jam_6: 1656659483
-      23_Studio_32x32Jam_70: 819038932
-      23_Studio_32x32Jam_13: 1429499741
-      23_Studio_32x32Jam_8: 235809612
-      23_Studio_32x32Jam_2: -563436696
-      23_Studio_32x32Jam_83: 1825072811
       23_Studio_32x32Jam_138: -330699013
+      23_Studio_32x32Jam_13: 1429499741
       23_Studio_32x32Jam_85: 881353480
+      23_Studio_32x32Jam_2: -563436696
+      23_Studio_32x32Jam_70: 819038932
+      23_Studio_32x32Jam_83: 1825072811
+      23_Studio_32x32Jam_156: 2042671655
       23_Studio_32x32Jam_91: 1057361967
+      23_Studio_32x32Jam_8: 235809612
       23_Studio_32x32Jam_79: 1653141283
       23_Studio_32x32Jam_1: 1555093812
-      23_Studio_32x32Jam_156: 2042671655
       23_Studio_32x32Jam_86: 1228219897
+      23_Studio_32x32Jam_6: 1656659483
       23_Studio_32x32Jam_50: -501182605
       23_Studio_32x32Jam_104: -1236229289
       23_Studio_32x32Jam_128: 530529761
