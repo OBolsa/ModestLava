@@ -9,6 +9,7 @@ public class CharacterManager : MonoBehaviour
     public string CurrentCharacterName;
     [SerializeField] private ActionChannel m_ActionChannel;
     [SerializeField] private UiChannel m_UiChannel;
+    [SerializeField] private AudioClip m_EntrarESairDoCorpo;
     private List<CharacterController> _Characters = new List<CharacterController>();
 
     private void Awake()
@@ -47,6 +48,9 @@ public class CharacterManager : MonoBehaviour
             if (item.CharacterName == "Karl")
                 item.gameObject.SetActive(true);
             item.enabled = true;
+            item.PlayParticle();
+            CameraFollow.instance.Target = item.transform;
+            AudioManager.instance.PlaySfx(m_EntrarESairDoCorpo, 1f, Vector2.one, AudioManager.instance.sfxSource);
         }
     }
 
