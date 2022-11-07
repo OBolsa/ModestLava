@@ -9,6 +9,15 @@ EditorBuildSettings:
     path: Assets/Scenes/IntroScene.unity
     guid: 64cb566408e1b5a479e43dd314e14167
   - enabled: 1
+    path: Assets/Scenes/Cutscene.unity
+    guid: 3a0221389054c8d4c8272d79cec62809
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/EndCutscene.unity
+    guid: 4514736459b3d62478d3c8cde15372bd
+  - enabled: 1
+    path: Assets/Scenes/TheEnd.unity
+    guid: 2e384994b93140c4fbc979ef24f5300f
   m_configObjects: {}

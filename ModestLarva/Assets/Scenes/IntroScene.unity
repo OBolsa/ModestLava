@@ -322,4 +322,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Time: 11
-  NextScene: SampleScene
+  NextScene: Cutscene
